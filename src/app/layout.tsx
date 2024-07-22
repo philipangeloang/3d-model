@@ -2,7 +2,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import { ThemeProvider } from "./_components/theme-provider";
+import { ThemeProvider } from "./_components/theme/theme-provider";
 
 export const metadata: Metadata = {
   title: "3D Model",

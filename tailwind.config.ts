@@ -30,6 +30,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+       "main-yellow": "#FBDC3E",
+      },
       fontFamily: {
         inter: "Inter, sans-serif",
         courier: "Courier Prime, monospace",

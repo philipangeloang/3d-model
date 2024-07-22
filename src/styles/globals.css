@@ -11,3 +11,8 @@
     box-sizing: border-box;
     font-family: 'Courier Prime', monospace;
 }
+
+.vertical-mode {
+    writing-mode: vertical-rl;  
+    text-orientation: mixed ;
+}

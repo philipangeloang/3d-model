@@ -4,6 +4,9 @@ import Hero from "./_components/section/home/hero";
 import HomeVideo from "./_components/section/home/home-video";
 import Mission from "./_components/section/home/mission";
 import Trivia from "./_components/section/home/trivia";
+import Typewriting from "./_components/section/home/typewriting";
+import JobPosition from "./_components/section/home/job-position";
+import Footer from "./_components/section/home/footer";
 
 export default async function Home() {
   return (
@@ -15,6 +18,9 @@ export default async function Home() {
       <HomeVideo />
       <Mission />
       <Trivia />
+      <Typewriting />
+      <JobPosition />
+      <Footer />
     </HydrateClient>
   );
 }

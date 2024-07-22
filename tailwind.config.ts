@@ -32,6 +32,7 @@ const config = {
     extend: {
       colors: {
        "main-yellow": "#FBDC3E",
+       "main-gray" : "#EBEBEB",
       },
       fontFamily: {
         inter: "Inter, sans-serif",

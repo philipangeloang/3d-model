@@ -3,8 +3,8 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function JobPosition() {
   return (
-    <section className="bg-main-yellow w-full">
-      <div className="mx-auto max-w-screen-2xl p-4 py-40">
+    <section className="w-full bg-main-yellow">
+      <div className="mx-auto max-w-screen-2xl p-10 py-40">
         <h1 className="text-6xl">
           Lorem ipsum <br />
           dolor sit amet.

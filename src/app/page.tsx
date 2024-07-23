@@ -1,4 +1,5 @@
 import { HydrateClient } from "~/trpc/server";
+import dynamic from "next/dynamic";
 import Navbar from "./_components/section/navbar";
 import Hero from "./_components/section/home/hero";
 import HomeVideo from "./_components/section/home/home-video";
@@ -8,10 +9,14 @@ import Typewriting from "./_components/section/home/typewriting";
 import JobPosition from "./_components/section/home/job-position";
 import Footer from "./_components/section/home/footer";
 
+const Scene = dynamic(() => import("./_components/section/home/scene"), {
+  ssr: false,
+});
+
 export default async function Home() {
   return (
     <HydrateClient>
-      <div className="w-full bg-white bg-grid-black/[0.03] dark:bg-black dark:bg-grid-white/[0.03]">
+      <div className="w-full bg-white bg-grid-black/[0.05] dark:bg-black dark:bg-grid-white/[0.05]">
         <Navbar />
         <Hero />
       </div>
@@ -19,6 +24,7 @@ export default async function Home() {
       <Mission />
       <Trivia />
       <Typewriting />
+      <Scene />
       <JobPosition />
       <Footer />
     </HydrateClient>

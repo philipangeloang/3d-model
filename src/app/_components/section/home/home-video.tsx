@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function HomeVideo() {
   return (
-    <section className="w-full">
+    <section className="w-full bg-white bg-grid-black/[0.05] dark:bg-black dark:bg-grid-white/[0.05]">
       <div className="relative mx-auto max-w-screen-2xl p-10">
         <p className="absolute mx-auto flex translate-y-5 gap-3 bg-yellow-300 p-3 text-sm font-bold tracking-widest">
           JOIN THE TEAM <FaArrowRight />

@@ -11,7 +11,8 @@ export default function HomeVideo() {
 
       <video
         src="https://content.ltaresearch.com/wp-content/uploads/2023/12/Website-Hero-Reduced-File-Size.mp4"
-        preload="auto"
+        preload={"auto"}
+        muted={true}
         autoPlay={true}
         loop={true}
         playsInline={true}

@@ -3,7 +3,7 @@
 export default function Trivia() {
   return (
     <section className="w-full">
-      <div className="relative mx-auto flex max-w-screen-2xl flex-col px-4">
+      <div className="relative mx-auto flex max-w-screen-2xl flex-col">
         <div className="flex justify-between">
           <img
             src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"

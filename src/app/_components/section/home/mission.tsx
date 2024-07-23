@@ -2,9 +2,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function Mission() {
   return (
-    <section className="bg-main-yellow w-full">
+    <section className="w-full bg-main-yellow">
       <div className="mx-auto flex max-w-screen-2xl">
-        <div className="vertical-mode mt-48 flex rotate-180 justify-end text-2xl font-bold tracking-widest text-black/50">
+        <div className="vertical-mode mt-48 flex rotate-180 justify-end pr-10 text-2xl font-bold tracking-widest text-black/50">
           OUR MISSION
         </div>
         <div className="flex flex-col gap-20 border-l border-black/30">

@@ -2,7 +2,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Earth from "../../../../../public/Earth";
-import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { AuroraBackground } from "~/app/_components/ui/aurora-background";
 import { FaArrowRight } from "react-icons/fa6";
 

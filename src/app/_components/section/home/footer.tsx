@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-screen-2xl flex-col gap-5 p-10 pt-32">
         <div className="flex justify-between gap-10">
           <div className="font-inter text-5xl font-black">LOGO</div>
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-10">
             <div className="col-span-4 flex flex-col gap-5 text-2xl">
               <div className="font-inter text-base tracking-widest text-white/70">
                 CONTACT

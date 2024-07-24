@@ -1,12 +1,10 @@
-import { FaArrowRight } from "react-icons/fa6";
+import AnimatedButton from "../../block/animated-button";
 
 export default function HomeVideo() {
   return (
-    <section className="w-full bg-white bg-grid-black/[0.05] dark:bg-black dark:bg-grid-white/[0.05]">
+    <section className="w-full bg-white dark:bg-black">
       <div className="relative mx-auto max-w-screen-2xl p-10">
-        <p className="absolute mx-auto flex translate-y-5 gap-3 bg-yellow-300 p-3 text-sm font-bold tracking-widest">
-          JOIN THE TEAM <FaArrowRight />
-        </p>
+        <AnimatedButton />
       </div>
 
       <video
@@ -16,7 +14,7 @@ export default function HomeVideo() {
         autoPlay={true}
         loop={true}
         playsInline={true}
-      ></video>
+      />
     </section>
   );
 }

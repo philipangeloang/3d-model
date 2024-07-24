@@ -1,8 +1,13 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 export default function HamburgerMenu() {
   const [active, setActive] = useState(false);
+
+  const { scrollY } = useScroll();
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest);
+  });
 
   const parent = {
     open: {
@@ -27,7 +32,7 @@ export default function HamburgerMenu() {
     },
   };
   return (
-    <div className="flex gap-20">
+    <div className="sticky top-96 flex gap-20">
       <motion.ul
         className="hidden gap-20 font-bold lg:flex"
         animate={active ? "open" : "closed"}

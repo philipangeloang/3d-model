@@ -3,36 +3,34 @@ import React from "react";
 export default function Footer() {
   return (
     <section className="w-full bg-black text-white">
-      <div className="mx-auto flex max-w-screen-2xl flex-col gap-5 p-10 pt-32">
-        <div className="flex justify-between gap-10">
-          <div className="font-inter text-5xl font-black">LOGO</div>
-          <div className="grid grid-cols-12 gap-10">
-            <div className="col-span-4 flex flex-col gap-5 text-2xl">
-              <div className="font-inter text-base tracking-widest text-white/70">
-                CONTACT
-              </div>
-              <div className="font-inter">
-                Lorem ipsum <br /> lorem@ipsum.com{" "}
-              </div>
-              <div className="font-inter">
-                Lorem ipsum <br /> lorem@ipsum.com{" "}
-              </div>
+      <div className="mx-auto flex max-w-screen-2xl flex-col p-10 pt-20 lg:flex-row lg:justify-between">
+        <div className="font-inter text-3xl font-black text-white">LOGO</div>
+        <div className="mt-10 flex flex-col gap-5 lg:mt-0 lg:flex-row lg:gap-56">
+          <div className="flex flex-col gap-5 lg:text-2xl">
+            <div className="font-inter text-white/70 lg:text-lg">CONTACT</div>
+            <div className="font-inter">
+              Lorem Ipsum <br />
+              lorem@ipsum.com
             </div>
-            <div className="col-span-4 flex flex-col gap-5 text-2xl">
-              <div className="opacity-0">Contact</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
-            </div>
-            <div className="col-span-4 flex flex-col gap-5 text-2xl">
-              <div className="opacity-0">Contact</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
-              <div className="py-1 font-inter">LOREM IPSUM</div>
+            <div className="font-inter">
+              Lorem Ipsum <br />
+              lorem@ipsum.com
             </div>
           </div>
+          <div className="flex flex-col justify-end gap-5 lg:text-2xl">
+            <div className="font-inter">Lorem Ipsum</div>
+            <div className="font-inter">Lorem Ipsum</div>
+            <div className="font-inter">Lorem Ipsum</div>
+          </div>
+          <div className="flex flex-col justify-end gap-5 lg:text-2xl">
+            <div className="font-inter">Lorem Ipsum</div>
+            <div className="font-inter">Lorem Ipsum</div>
+            <div className="font-inter">Lorem Ipsum</div>
+          </div>
         </div>
-        <div className="mx-auto pt-20">©COPYRIGHT LOREM IPSUM</div>
+      </div>
+      <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-center p-10 text-white/70">
+        @COPYRIGHT LOREM IPSUM
       </div>
     </section>
   );

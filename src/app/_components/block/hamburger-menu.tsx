@@ -29,7 +29,7 @@ export default function HamburgerMenu() {
   return (
     <div className="flex gap-20">
       <motion.ul
-        className="flex gap-20 font-bold"
+        className="hidden gap-20 font-bold lg:flex"
         animate={active ? "open" : "closed"}
         variants={parent}
       >

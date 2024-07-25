@@ -16,7 +16,7 @@ const Scene = dynamic(() => import("./_components/section/home/scene"), {
 export default async function Home() {
   return (
     <HydrateClient>
-      <div className="w-full bg-white bg-grid-black/[0.05] dark:bg-black dark:bg-grid-white/[0.05]">
+      <div className="w-full bg-white bg-grid-small-black/[0.15] dark:bg-black dark:bg-grid-small-white/[0.07]">
         <Navbar />
         <Hero />
       </div>

@@ -3,19 +3,19 @@ import { TypewriterEffectSmooth } from "../../ui/typewriter-effect";
 export default function Typewriting() {
   const words = [
     {
-      text: "and",
+      text: "Lorem",
     },
     {
-      text: "we",
+      text: "Ipsum",
     },
     {
-      text: "will",
+      text: "Dolor",
     },
     {
-      text: "fly",
+      text: "Sit",
     },
     {
-      text: "again.",
+      text: "Amet.",
     },
   ];
   return (

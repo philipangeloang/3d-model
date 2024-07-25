@@ -1,13 +1,8 @@
 "use client";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 export default function HamburgerMenu() {
   const [active, setActive] = useState(false);
-
-  const { scrollY } = useScroll();
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
-  });
 
   const parent = {
     open: {
@@ -32,7 +27,7 @@ export default function HamburgerMenu() {
     },
   };
   return (
-    <div className="sticky top-96 flex gap-20">
+    <div className="flex gap-20">
       <motion.ul
         className="hidden gap-20 font-bold lg:flex"
         animate={active ? "open" : "closed"}
@@ -51,6 +46,26 @@ export default function HamburgerMenu() {
           NEWSROOM
         </motion.li>
       </motion.ul>
+      {active && (
+        <motion.ul
+          className="absolute left-0 top-32 flex w-full flex-col items-center justify-center gap-10 bg-black py-10 text-2xl font-bold text-white lg:hidden"
+          animate={active ? "open" : "closed"}
+          variants={parent}
+        >
+          <motion.li className="tracking-widest" variants={item}>
+            OUR STORY
+          </motion.li>
+          <motion.li className="tracking-widest" variants={item}>
+            TECHNOLOGY
+          </motion.li>
+          <motion.li className="tracking-widest" variants={item}>
+            JOIN OUR TEAM
+          </motion.li>
+          <motion.li className="tracking-widest" variants={item}>
+            NEWSROOM
+          </motion.li>
+        </motion.ul>
+      )}
 
       <motion.div
         className="flex cursor-pointer flex-col gap-2"
